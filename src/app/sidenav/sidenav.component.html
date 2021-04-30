@@ -1,0 +1,8 @@
+<div class="bg-primary mt-5">
+
+<ul class="nav flex-column">
+  <li class="nav-item py-2 " *ngFor = "let nav of navItems" >
+    <a (click)="updateSelection(nav)" class="nav-link text-white-50" aria-current="page" href="#">{{nav.courseName}}</a>
+  </li>
+</ul>
+</div>
