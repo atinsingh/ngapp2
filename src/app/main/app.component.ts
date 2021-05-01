@@ -25,7 +25,13 @@ export class AppComponent implements OnInit{
         console.log(error);
       }
     )
+    this.courseService.getAddCourse().subscribe(
+      data => {
+        this.cats.push(data)
+      }
+    )
   }
 
+  
 
 }

@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="main">
+        <div class="main-center">
+            <form (submit)="submitForm($event)" class="" method="post" action="#">
+                
+                <div class="form-group">
+                    <label for="name">Course Code</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+        <input type="text" [(ngModel)]="courseData.courseCode" class="form-control" name="code" id="code"  placeholder="Enter your courseCode"/>
+                    </div>
+                    {{ courseData.courseCode }}
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Course Name</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input  [(ngModel)]="courseData.courseName" type="text" id="coursename" class="form-control" name="coursename" placeholder="Enter Course Name"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Description</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                            <textarea [(ngModel)]="courseData.description" type="text" class="form-control" name="description" placeholder="Enter your Description"></textarea>
+                        </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Thumbnail</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input [(ngModel)]="courseData.thumbnailUrl" type="text" class="form-control" name="imgUrl" placeholder="Enter your your image url"/>
+                        </div>
+                </div>
+
+            
+        <button (click) = "submitForm($event)" type="submit">SUBMIT</button>
+                
+            </form>
+        </div><!--main-center"-->
+    </div><!--main-->
+</div><!--container-->

@@ -8,18 +8,26 @@ import { CourseGridComponent } from './course-grid/course-grid.component';
 import {CourseService} from './services/course.service';
 import {HttpClientModule} from '@angular/common/http';
 import { CourseCardComponent } from './course-card/course-card.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { CourseFormComponent } from './course-form/course-form.component';
+import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
     CourseGridComponent,
-    CourseCardComponent
+    CourseCardComponent,
+    NavbarComponent,
+    CourseFormComponent,
+    HomeComponent
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     CourseService

@@ -1,16 +1,8 @@
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-12">
-      <div class="h1">Course APP</div>
-    </div>
+      <app-navbar class="col-12"></app-navbar>
   </div>
   <div class="row">
-    <div class="col-4">
-      <app-sidenav [navItems]="cats"></app-sidenav>
-    </div>
-    <div class="col-8">
-      <app-course-grid></app-course-grid>
-    </div>
-  </div>
+    <router-outlet></router-outlet>
 </div>
